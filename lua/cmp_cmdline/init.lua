@@ -40,15 +40,15 @@ local MODIFIER_REGEX = create_regex({
 }, true)
 
 local COUNT_RANGE_REGEX = create_regex({
-  [=[\s*\%(\d\+\|\$\)\%[,\%(\d\+\|\$\)]\s*]=],
-  [=[\s*'\%[<,'>]\s*]=],
-  [=[\s*\%(\d\+\|\$\)\s*]=],
+  [[\s*\%(\d\+\|\$\)\%[,\%(\d\+\|\$\)]\s*]],
+  [[\s*'\%[<,'>]\s*]],
+  [[\s*\%(\d\+\|\$\)\s*]],
 }, true)
 
 local ONLY_RANGE_REGEX = create_regex({
-  [=[^\s*\%(\d\+\|\$\)\%[,\%(\d\+\|\$\)]\s*$]=],
-  [=[^\s*'\%[<,'>]\s*$]=],
-  [=[^\s*\%(\d\+\|\$\)\s*$]=],
+  [[^\s*\%(\d\+\|\$\)\%[,\%(\d\+\|\$\)]\s*$]],
+  [[^\s*'\%[<,'>]\s*$]],
+  [[^\s*\%(\d\+\|\$\)\s*$]],
 }, true)
 
 local OPTION_NAME_COMPLETION_REGEX = create_regex({
